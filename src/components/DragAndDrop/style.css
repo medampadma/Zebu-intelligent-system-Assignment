@@ -1,0 +1,43 @@
+.App {
+    max-width: 960px;
+    margin: 10px auto;
+  }
+  
+  .text-center {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+  
+  /* Dropzone */
+  .dropzone {
+    padding: 30px;
+    height: 30vh;
+    width: 60vh;
+    border: 2px dashed black;
+    outline: none;
+    cursor: pointer;
+  }
+  .dropzone-active {
+    background-color: #f1e2ff;
+    border: 5px solid #2fd7b5;
+  }
+  .dropzone-content {
+    align-self: center;
+    font-size: 24px;
+  }
+#overall{
+  display:flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
+  .Form-style{
+    height: 30vh;
+    width: 60vh;
+    margin-top: 10px;
+  }
+
+  
