@@ -20,7 +20,9 @@ export default function ImageSlider() {
       if (current === index) newObj = { ...labelName, ...value };
       return newObj;
     });
+
     let jsonData = JSON.stringify(newObj);
+    //Blobs allow us to construct file like objects on the client that we can pass to apis that expect urls instead of requiring the server provides the file
     const blob = new Blob([jsonData], { type: "text/plain" });
     const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
